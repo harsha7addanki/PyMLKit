@@ -1,14 +1,22 @@
-from distutils.core import setup
+import setuptools
 
-setup(
-    name = 'PyMLKit',
-    packages = ['src'],
-    version = '1.0.0',  # Ideally should be same as your GitHub release tag varsion
-    description = '',
-    author = '',
-    author_email = '',
-    url = 'https://github.com/harsha7addanki/PyMLKit',
-    download_url = 'https://github.com/harsha7addanki/PyMLKit/archive/master.zip',
-    keywords = ['PyMLKit'],
-    classifiers = [],
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="PyMLKit", # Replace with your own username
+    version="1.0.0",
+    author="Harsha",
+    author_email="",
+    description="",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/harsha7addanki/PyMLKit",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
 )
