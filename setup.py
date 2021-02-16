@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="PyMLKit", # Replace with your own username
-    version="1.1.1",
+    name="PyMLKit",
+    version="1.1.2",
     author="Harsha",
     author_email="",
     description="",
